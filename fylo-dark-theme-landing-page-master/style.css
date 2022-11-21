@@ -291,6 +291,7 @@ header {
 .footer {
     background-color: var(--bg-footer);
     padding-top: 12rem;
+    padding-bottom: 1.5rem;
 }
 
 .footer-logo {
@@ -298,7 +299,7 @@ header {
     max-width: 140px;
 }
 
-.footer .container > div {
+.footer .footer-group {
     margin-bottom: 3.5rem;
 }
 
@@ -337,9 +338,16 @@ header {
     gap: 8px;
 }
 
+.attribution {
+    /* position: absolute; */
+    /* bottom: 5px; */
+}
+
 /* Desktop view */
 @media (min-width: 600px) {
     .container {
         max-width: 1440px;
     }
+
+
 }
