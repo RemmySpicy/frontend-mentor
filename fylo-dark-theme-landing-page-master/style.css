@@ -55,7 +55,7 @@ button {
 
 h1 {
     font-family: var(--font-raleway);
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
     margin-block: 1rem;
     line-height: 1.4;
@@ -135,21 +135,23 @@ header {
     width: 80%;
 }
 
+.bg-wave-desktop {
+    display: none;
+}
+
 .bg-wave-mobile {
     transform: translateY(-100%);
+    position: absolute;
     width: 100%;
-    /* max-width: 550px; */
-    max-height: 180px;
     margin: 0 auto;
     pointer-events: none;
-    /* position: relative;
     left: 0;
-    right: 0; */
+    right: 0;
 }
 
 /* QUALITIES */
 .qualities {
-    margin-top: 12.5rem;
+    margin-top: 25rem;
     text-align: center;
 }
 
@@ -345,9 +347,40 @@ header {
 
 /* Desktop view */
 @media (min-width: 600px) {
+    body {
+        text-align: center;
+        font-size: 20px;
+    }
+
     .container {
         max-width: 1440px;
     }
 
+    .nav-bar {
+        max-width: 100%;
+        padding: 2rem 3rem;
+    }
 
+    .nav-item {
+        margin-left: 2rem;
+    }
+
+    .bg-wave-mobile {
+        display: none;
+    }
+
+    .bg-wave-desktop {
+        display: unset;
+        position: absolute;
+        left: 0;
+        transform: translateY(-100%);
+        width: 100%;
+        /* max-width: 550px; */
+        /* max-height: 180px; */
+        margin: 0 auto;
+        pointer-events: none;
+        /* position: relative;
+        left: 0;
+        right: 0; */
+    }
 }
