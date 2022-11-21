@@ -50,6 +50,7 @@ button {
 .container {
     max-width: 375px;
     margin: 0 auto;
+    padding-inline: 10px;
 }
 
 h1 {
@@ -71,11 +72,15 @@ p {
 
 body {
     margin: 0;
-    padding: 0;
     font-family: var(--font-open-sans);
-    background-color: var(--bg-main);
     color: var(--white);
     font-weight: 400;
+}
+
+main {
+    background-color: var(--bg-main);
+    /* padding: 10px; */
+    /* margin: 10px; */
 }
 
 /* Nav */
@@ -133,7 +138,13 @@ header {
 .bg-wave-mobile {
     transform: translateY(-100%);
     width: 100%;
+    /* max-width: 550px; */
+    max-height: 180px;
+    margin: 0 auto;
     pointer-events: none;
+    /* position: relative;
+    left: 0;
+    right: 0; */
 }
 
 /* QUALITIES */
@@ -324,4 +335,11 @@ header {
     display: flex;
     justify-content: center;
     gap: 8px;
+}
+
+/* Desktop view */
+@media (min-width: 600px) {
+    .container {
+        max-width: 1440px;
+    }
 }
